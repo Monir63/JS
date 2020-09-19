@@ -1,0 +1,8 @@
+<script  src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#name').keyup(function(){
+                $('#slug').val($(this).val().toLowerCase().split(',').join('').replace(/\s/g,"-"));
+            });
+        })
+    </script>
